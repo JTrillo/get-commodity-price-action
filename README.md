@@ -30,7 +30,7 @@ jobs:
 
     steps:
       - name: Get commodity price step
-        uses: jtrillo/get-commodity-price-action@v1
+        uses: jtrillo/get-commodity-price-action@v1.0.1
         with:
           commodity: 'silver'
 ```
