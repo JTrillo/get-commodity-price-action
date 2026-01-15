@@ -1,0 +1,17 @@
+name: 'Get Commodity Price'
+description: 'Get gold or silver price per ounce'
+inputs:
+  commodity: # id of input
+    description: 'Commodity (gold or silver)'
+    required: true
+    default: 'gold'
+  currency: # id of input
+    description: 'Currency (EUR or USD)'
+    required: false
+    default: 'EUR'
+outputs:
+  price: # id of output
+    description: 'The current price of the select commodity'
+runs:
+  using: 'node20'
+  main: 'index.js'

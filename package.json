@@ -1,0 +1,25 @@
+{
+  "name": "get-commodity-price-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JTrillo/get-commodity-price-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JTrillo/get-commodity-price-action/issues"
+  },
+  "homepage": "https://github.com/JTrillo/get-commodity-price-action#readme",
+  "dependencies": {
+    "@actions/core": "^2.0.2",
+    "@actions/github": "^7.0.0"
+  }
+}
