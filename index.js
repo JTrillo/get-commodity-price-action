@@ -23,12 +23,12 @@ try {
     price = currency.toLowerCase() === 'eur' ? 80 : 93
   }
 
-  console.log(`Current ${commodity} price per ounce is: ${price} ${currency.toLowerCase}`);
+  console.log(`Current ${commodity} price per ounce is: ${price} ${currency.toLowerCase()}`);
 
   setOutput('price', price);
 
-  const payload = JSON.stringify(context.payload, undefined, 2);
-  console.log(`The event payload: ${payload}`);
+  // const payload = JSON.stringify(context.payload, undefined, 2);
+  // console.log(`The event payload: ${payload}`);
 } catch (err) {
   setFailed(err.message);
 }
