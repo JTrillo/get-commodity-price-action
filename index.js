@@ -27,7 +27,7 @@ try {
 
   setOutput('price', price);
 
-  const payload = JSON.stingigy(context.payload, undefined, 2);
+  const payload = JSON.stringify(context.payload, undefined, 2);
   console.log(`The event payload: ${payload}`);
 } catch (err) {
   setFailed(err.message);
