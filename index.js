@@ -4,13 +4,13 @@ import { context } from '@actions/github';
 try {
   const commodity = getInput('commodity');
 
-  if (commodity.toLowerCase() !== 'gold' || commodity.toLowerCase() !== 'silver') {
+  if (commodity.toLowerCase() !== 'gold' && commodity.toLowerCase() !== 'silver') {
     throw new Error(`Commodity ${commodity} is not valid`);
   }
 
   const currency = getInput('currency');
 
-  if (currency.toLowerCase() !== 'eur' || currency.toLowerCase() !== 'usd') {
+  if (currency.toLowerCase() !== 'eur' && currency.toLowerCase() !== 'usd') {
     throw new Error(`Currency ${currency} is not valid`);
   }
 
